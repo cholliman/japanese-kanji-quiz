@@ -22,7 +22,7 @@ self.interval_time = 604800 * 2 # 2 weeks in seconds
 
 in 'japanese-quiz.py'. Words are only added to the counter if you get them correct in the all-words quiz. You can view which words you have gotten correct and how many times in a row you have gotten them correct in the `counter.csv`.
 
-If you want to use the .bat script to launch the gui you will need to either replace or remove the environment call.
+If you want to use the .bat script to launch the gui you will need to either replace or remove the environment call. Note that since the romaji for づ　is "zu" even though for some dictionaries and keyboard inputs you will need to type "dzu" or "du".
 
 Enjoy!
 
