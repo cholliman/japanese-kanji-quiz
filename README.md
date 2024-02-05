@@ -30,7 +30,7 @@ Sample Quizzes
 ![](/readme-images/quizzes.png)
 
 Correct Words
-![](/readme-images/correct.PNG)
+![](/readme-images/correct.png)
 
 Incorrect Words
-![](/readme-images/incorrect.PNG)
+![](/readme-images/incorrect.png)
