@@ -4,7 +4,7 @@ Minimalist Japanese Hiragana/Katakana/Kanji Quiz.
 
 ----
 
-This python-based quiz was written to quickly memorize Hiragana/Katakana/Kanji. You can get this by downloading Anaconda3. Make sure you have the required python packages installed by running: 
+This python-based quiz was written to quickly memorize Hiragana/Katakana/Kanji. You can use this quiz by downloading Anaconda3. Make sure you have the required python packages installed by running: 
 
 ```
 pip install -r requirements.txt
