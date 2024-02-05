@@ -137,7 +137,7 @@ class Quiz(QtWidgets.QWidget):
         # remaining characters
         self.num_of_characters = QtWidgets.QLabel(self)
         self.num_of_characters.setFont(QFont('Times', 14))
-        self.num_of_characters.setText('Characters Remaining: ')
+        self.num_of_characters.setText('Remaining Words: ')
 
         # previous header
         self.prev_head = QtWidgets.QLabel(self)
@@ -227,7 +227,7 @@ class Quiz(QtWidgets.QWidget):
             self.character_btn.setText('select a quiz')
             self.character_entry.setText('')
             self.meaning_entry.setText('')
-            self.num_of_characters.setText('Characters Remaining: ')
+            self.num_of_characters.setText('Remaining Words: ')
         else:
             pass
         
@@ -305,7 +305,7 @@ class Quiz(QtWidgets.QWidget):
             if text == i:
                 index = self.missed_name.index(i)
                 if self.empty_file_1 == True:
-                    self.num_of_characters.setText('Characters Remaining: ')
+                    self.num_of_characters.setText('Remaining Words: ')
                     self.percent_correct.setText('Percent Correct: ')
                     self.character_btn.setText('empty quiz')
                     self.question_status.setText('')
@@ -316,7 +316,7 @@ class Quiz(QtWidgets.QWidget):
                     self.meaning = _np.array(self.missed[index][2])
                     self.missed_file = self.missed_words
                     if self.romaji.size == 1:
-                        self.num_of_characters.setText('Characters Remaining: ')
+                        self.num_of_characters.setText('Remaining Words: ')
                         self.percent_correct.setText('Percent Correct: ')
                         self.character_btn.setText('one word quiz')
                         self.question_status.setText('')
@@ -331,7 +331,7 @@ class Quiz(QtWidgets.QWidget):
             self.romaji, self.japanese, self.meaning = shuffle(self.romaji, self.japanese, self.meaning)
 
         self.total_number = self.japanese.size
-        self.num_of_characters.setText('Characters Remaining: ' + str(self.japanese.size) + '/' + str(self.total_number))
+        self.num_of_characters.setText('Remaining Words: ' + str(self.japanese.size) + '/' + str(self.total_number))
         self.character_btn.setText(self.japanese[1])
 
     def button_init(self):
@@ -394,7 +394,7 @@ class Quiz(QtWidgets.QWidget):
                 self.character_btn.setText(self.japanese[1])
             self.character_entry.setText('')
             self.meaning_entry.setText('')
-            self.num_of_characters.setText('Characters Remaining: ' + str(self.japanese.size) + '/' + str(self.total_number))
+            self.num_of_characters.setText('Remaining Words: ' + str(self.japanese.size) + '/' + str(self.total_number))
             self.percent_correct.setText('Percent Correct: ' + str(round(self.num_correct/self.num_total * 100, 2)) + '%')
 
     def three_column_store(self):
@@ -461,7 +461,7 @@ class Quiz(QtWidgets.QWidget):
                 self.character_btn.setText(self.japanese[1])
             self.character_entry.setText('')
             self.meaning_entry.setText('')
-            self.num_of_characters.setText('Characters Remaining: ' + str(self.japanese.size) + '/' + str(self.total_number))
+            self.num_of_characters.setText('Remaining Words: ' + str(self.japanese.size) + '/' + str(self.total_number))
             self.percent_correct.setText('Percent Correct: ' + str(round(self.num_correct/self.num_total * 100, 2)) + '%')
             # write the updated dataframe to the counter.csv
             if self.all:

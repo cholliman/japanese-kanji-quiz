@@ -31,6 +31,3 @@ Sample Quizzes
 
 Correct Words
 ![](/readme-images/correct.png)
-
-Incorrect Words
-![](/readme-images/incorrect.png)
